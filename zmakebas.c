@@ -530,7 +530,7 @@ int main(int argc,char *argv[])
 #ifdef MSDOS
 static unsigned char buf[512],lcasebuf[512],outbuf[1024];
 #else
-static unsigned char buf[2048],lcasebuf[2048],outbuf[4096];
+static unsigned char buf[16384],lcasebuf[16384],outbuf[32768];
 #endif
 int f,toknum,toklen,linenum,linelen,in_quotes,in_rem,lastline;
 char **tarrptr;
